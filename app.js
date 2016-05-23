@@ -28,6 +28,10 @@ app.get('/aurelia/*', function(request, response){
   response.sendfile('./public/aurelia/index.html');
 });
 
+app.get('/es2016/*', function(request, response){
+  response.sendfile('./public/es2016/index.html');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
